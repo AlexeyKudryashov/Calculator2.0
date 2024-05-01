@@ -24,9 +24,15 @@ public class Calculator2 {
         if (numOne > 10) {
             throw new IOException("введено число больше 10");
         }
+          if (numOne < 1) {
+            throw new IOException("Введено число меньше 1");
+        }
         numTwo = Integer.parseInt(String.valueOf(strokArgum[2]));
-        if (numOne > 10) {
+        if (numTwo > 10) {
             throw new IOException("введено число больше 10");
+        }
+         if (numTwo < 1) {
+            throw new IOException("Введено число меньше 1");
         }
         String character = String.valueOf(strokArgum[1]);
         switch (character) {
